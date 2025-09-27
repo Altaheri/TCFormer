@@ -1,0 +1,13 @@
+# Python 3.11.13
+mne==1.9.0	       
+numpy==2.3.1          
+scikit-learn==1.7.0    
+moabb==0.5.0	       
+torch==2.7.1           
+braindecode==0.8.1     
+PyYAML==6.0.2          
+pytorch-lightning==2.5.2 
+einops==0.8.1	       
+torchvision==0.22.1    
+scipy==1.16.0	       
+matplotlib==3.10.3     
