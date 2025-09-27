@@ -1,0 +1,22 @@
+Results for model: ShallowNet
+#Params: 44644
+Dataset: bcic2a_loso
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 3.76m, Test Time: 54.31s, Test Acc: 0.5486, Test Loss: 1.5492, Test Kappa: 0.3981
+Subject 2 => Train Time: 5.82m, Test Time: 32.61s, Test Acc: 0.3611, Test Loss: 2.7272, Test Kappa: 0.1481
+Subject 3 => Train Time: 5.56m, Test Time: 42.88s, Test Acc: 0.6632, Test Loss: 1.3030, Test Kappa: 0.5509
+Subject 4 => Train Time: 6.42m, Test Time: 28.52s, Test Acc: 0.3333, Test Loss: 3.3068, Test Kappa: 0.1111
+Subject 5 => Train Time: 6.57m, Test Time: 32.69s, Test Acc: 0.3889, Test Loss: 5.2543, Test Kappa: 0.1852
+Subject 6 => Train Time: 6.56m, Test Time: 29.10s, Test Acc: 0.4097, Test Loss: 2.7234, Test Kappa: 0.2130
+Subject 7 => Train Time: 6.59m, Test Time: 28.90s, Test Acc: 0.4826, Test Loss: 2.0001, Test Kappa: 0.3102
+Subject 8 => Train Time: 6.61m, Test Time: 28.19s, Test Acc: 0.6319, Test Loss: 0.9978, Test Kappa: 0.5093
+Subject 9 => Train Time: 6.62m, Test Time: 28.32s, Test Acc: 0.5417, Test Loss: 2.2847, Test Kappa: 0.3889
+
+--- Summary Statistics ---
+Average Test Accuracy: 48.46 ± 11.25
+Average Test Kappa:    0.313 ± 0.150
+Average Test Loss:     2.461 ± 1.212
+Total Training Time: 54.51 min
+Avg Response Time per sample: 117.87 ms

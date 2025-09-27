@@ -1,0 +1,22 @@
+Results for model: TCFormer
+#Params: 74036
+Dataset: bcic2b_loso
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 12.58m, Test Time: 8.89s, Test Acc: 0.7281, Test Loss: 0.5273, Test Kappa: 0.4563
+Subject 2 => Train Time: 12.97m, Test Time: 8.74s, Test Acc: 0.7143, Test Loss: 0.5846, Test Kappa: 0.4286
+Subject 3 => Train Time: 12.62m, Test Time: 8.87s, Test Acc: 0.6438, Test Loss: 0.8274, Test Kappa: 0.2875
+Subject 4 => Train Time: 12.85m, Test Time: 9.15s, Test Acc: 0.8875, Test Loss: 0.2895, Test Kappa: 0.7750
+Subject 5 => Train Time: 12.59m, Test Time: 8.87s, Test Acc: 0.9781, Test Loss: 0.0871, Test Kappa: 0.9563
+Subject 6 => Train Time: 12.92m, Test Time: 9.13s, Test Acc: 0.7844, Test Loss: 0.5038, Test Kappa: 0.5688
+Subject 7 => Train Time: 12.90m, Test Time: 9.07s, Test Acc: 0.8469, Test Loss: 0.3465, Test Kappa: 0.6938
+Subject 8 => Train Time: 12.55m, Test Time: 9.02s, Test Acc: 0.8562, Test Loss: 0.3943, Test Kappa: 0.7125
+Subject 9 => Train Time: 12.85m, Test Time: 9.53s, Test Acc: 0.8094, Test Loss: 0.4101, Test Kappa: 0.6187
+
+--- Summary Statistics ---
+Average Test Accuracy: 80.54 ± 9.53
+Average Test Kappa:    0.611 ± 0.191
+Average Test Loss:     0.441 ± 0.195
+Total Training Time: 114.83 min
+Average Response Time: 5.76 ms

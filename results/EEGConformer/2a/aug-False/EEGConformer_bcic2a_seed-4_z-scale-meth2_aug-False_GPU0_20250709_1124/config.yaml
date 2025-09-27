@@ -1,0 +1,31 @@
+dataset_name: bcic2a
+gpu_id: 0
+max_epochs: 1000
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: EEGConformer
+model_kwargs:
+  beta_1: 0.5
+  depth: 6
+  embedding_size: 40
+  input_size_cls: 2440
+  lr: 0.0002
+  optimizer: adam
+  scheduler: true
+  warmup_epochs: 20
+  warmup_epochs_loso: 3
+  weight_decay: 0.0
+plot_cm_average: true
+plot_cm_per_subject: true
+preprocessing:
+  batch_size: 72
+  high_cut: 40
+  interaug: false
+  low_cut: 4
+  sfreq: 250
+  start: 0.0
+  stop: 0.0
+  z_scale: true
+seed: 4
+subject_ids: all
+z_scale: true

@@ -1,0 +1,27 @@
+Results for model: EEGTCNet
+#Params: 4448
+Dataset: hgd
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 5.18m, Test Time: 10.65s, Test Acc: 0.9312, Test Loss: 0.2369, Test Kappa: 0.9083
+Subject 2 => Train Time: 10.85m, Test Time: 20.52s, Test Acc: 0.8938, Test Loss: 0.3073, Test Kappa: 0.8583
+Subject 3 => Train Time: 11.50m, Test Time: 21.25s, Test Acc: 0.9875, Test Loss: 0.0263, Test Kappa: 0.9833
+Subject 4 => Train Time: 11.63m, Test Time: 20.94s, Test Acc: 1.0000, Test Loss: 0.0023, Test Kappa: 1.0000
+Subject 5 => Train Time: 9.92m, Test Time: 18.87s, Test Acc: 0.9937, Test Loss: 0.0087, Test Kappa: 0.9917
+Subject 6 => Train Time: 11.65m, Test Time: 20.84s, Test Acc: 0.9563, Test Loss: 0.0990, Test Kappa: 0.9417
+Subject 7 => Train Time: 11.10m, Test Time: 21.05s, Test Acc: 0.8239, Test Loss: 0.4522, Test Kappa: 0.7650
+Subject 8 => Train Time: 9.06m, Test Time: 18.17s, Test Acc: 0.9688, Test Loss: 0.0552, Test Kappa: 0.9583
+Subject 9 => Train Time: 11.64m, Test Time: 21.05s, Test Acc: 0.9937, Test Loss: 0.0200, Test Kappa: 0.9917
+Subject 10 => Train Time: 10.96m, Test Time: 20.74s, Test Acc: 0.9625, Test Loss: 0.1768, Test Kappa: 0.9500
+Subject 11 => Train Time: 11.63m, Test Time: 20.12s, Test Acc: 0.9688, Test Loss: 0.1287, Test Kappa: 0.9583
+Subject 12 => Train Time: 11.94m, Test Time: 24.26s, Test Acc: 0.9875, Test Loss: 0.0402, Test Kappa: 0.9833
+Subject 13 => Train Time: 11.06m, Test Time: 87.39s, Test Acc: 0.9748, Test Loss: 0.0719, Test Kappa: 0.9665
+Subject 14 => Train Time: 12.29m, Test Time: 22.40s, Test Acc: 0.7937, Test Loss: 0.7938, Test Kappa: 0.7250
+
+--- Summary Statistics ---
+Average Test Accuracy: 94.54 ± 6.22
+Average Test Kappa:    0.927 ± 0.083
+Average Test Loss:     0.173 ± 0.213
+Total Training Time: 150.41 min
+Average Response Time: 0.92 ms

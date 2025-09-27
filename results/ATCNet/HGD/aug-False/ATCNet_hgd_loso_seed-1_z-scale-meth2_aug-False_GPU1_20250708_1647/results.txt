@@ -1,0 +1,27 @@
+Results for model: ATCNet
+#Params: 114436
+Dataset: hgd_loso
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 44.17m, Test Time: 302.12s, Test Acc: 0.8938, Test Loss: 0.2780, Test Kappa: 0.8583
+Subject 2 => Train Time: 35.23m, Test Time: 353.62s, Test Acc: 0.7125, Test Loss: 0.7411, Test Kappa: 0.6167
+Subject 3 => Train Time: 37.85m, Test Time: 381.46s, Test Acc: 0.6938, Test Loss: 0.8836, Test Kappa: 0.5917
+Subject 4 => Train Time: 33.65m, Test Time: 349.28s, Test Acc: 0.9625, Test Loss: 0.1594, Test Kappa: 0.9500
+Subject 5 => Train Time: 36.91m, Test Time: 409.54s, Test Acc: 0.7875, Test Loss: 0.5353, Test Kappa: 0.7167
+Subject 6 => Train Time: 46.49m, Test Time: 499.62s, Test Acc: 0.5938, Test Loss: 1.1007, Test Kappa: 0.4583
+Subject 7 => Train Time: 46.29m, Test Time: 560.18s, Test Acc: 0.7862, Test Loss: 0.6281, Test Kappa: 0.7152
+Subject 8 => Train Time: 47.69m, Test Time: 541.12s, Test Acc: 0.6500, Test Loss: 0.9850, Test Kappa: 0.5333
+Subject 9 => Train Time: 66.45m, Test Time: 638.00s, Test Acc: 0.5250, Test Loss: 1.4510, Test Kappa: 0.3667
+Subject 10 => Train Time: 47.31m, Test Time: 365.63s, Test Acc: 0.5875, Test Loss: 0.8907, Test Kappa: 0.4500
+Subject 11 => Train Time: 44.94m, Test Time: 331.12s, Test Acc: 0.5813, Test Loss: 1.3410, Test Kappa: 0.4417
+Subject 12 => Train Time: 32.95m, Test Time: 292.74s, Test Acc: 0.7625, Test Loss: 0.6071, Test Kappa: 0.6833
+Subject 13 => Train Time: 48.40m, Test Time: 628.32s, Test Acc: 0.3711, Test Loss: 2.1429, Test Kappa: 0.1635
+Subject 14 => Train Time: 47.98m, Test Time: 378.45s, Test Acc: 0.5688, Test Loss: 2.1110, Test Kappa: 0.4250
+
+--- Summary Statistics ---
+Average Test Accuracy: 67.69 ± 14.99
+Average Test Kappa:    0.569 ± 0.200
+Average Test Loss:     0.990 ± 0.579
+Total Training Time: 616.30 min
+Avg Response Time per sample: 2695.85 ms

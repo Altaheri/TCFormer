@@ -1,0 +1,22 @@
+Results for model: EEGNet
+#Params: 1716
+Dataset: bcic2a_loso
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 2.28m, Test Time: 36.10s, Test Acc: 0.5729, Test Loss: 1.0259, Test Kappa: 0.4306
+Subject 2 => Train Time: 2.45m, Test Time: 36.05s, Test Acc: 0.4444, Test Loss: 1.2251, Test Kappa: 0.2593
+Subject 3 => Train Time: 2.41m, Test Time: 47.69s, Test Acc: 0.7014, Test Loss: 0.7449, Test Kappa: 0.6019
+Subject 4 => Train Time: 2.73m, Test Time: 38.54s, Test Acc: 0.4444, Test Loss: 1.2327, Test Kappa: 0.2593
+Subject 5 => Train Time: 2.57m, Test Time: 37.56s, Test Acc: 0.3889, Test Loss: 1.3580, Test Kappa: 0.1852
+Subject 6 => Train Time: 2.56m, Test Time: 35.96s, Test Acc: 0.4306, Test Loss: 1.5427, Test Kappa: 0.2407
+Subject 7 => Train Time: 2.59m, Test Time: 39.66s, Test Acc: 0.7014, Test Loss: 0.8542, Test Kappa: 0.6019
+Subject 8 => Train Time: 2.64m, Test Time: 36.41s, Test Acc: 0.6285, Test Loss: 0.8972, Test Kappa: 0.5046
+Subject 9 => Train Time: 2.79m, Test Time: 36.53s, Test Acc: 0.4271, Test Loss: 1.5515, Test Kappa: 0.2361
+
+--- Summary Statistics ---
+Average Test Accuracy: 52.66 ± 11.80
+Average Test Kappa:    0.369 ± 0.157
+Average Test Loss:     1.159 ± 0.279
+Total Training Time: 23.02 min
+Avg Response Time per sample: 132.91 ms

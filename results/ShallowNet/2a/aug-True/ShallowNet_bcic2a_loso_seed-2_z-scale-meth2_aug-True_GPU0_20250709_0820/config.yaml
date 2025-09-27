@@ -1,0 +1,33 @@
+dataset_name: bcic2a_loso
+gpu_id: 0
+max_epochs: 125
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: ShallowNet
+model_kwargs:
+  drop_prob: 0.5
+  filter_time_length: 25
+  input_window_samples: 875
+  lr: 0.001
+  n_filters_time: 40
+  optimizer: adam
+  pool_time_length: 75
+  pool_time_stride: 15
+  scheduler: false
+  warmup_epochs: 3
+  warmup_epochs_loso: 3
+  weight_decay: 0.0
+plot_cm_average: true
+plot_cm_per_subject: true
+preprocessing:
+  batch_size: 64
+  high_cut: 40
+  interaug: true
+  low_cut: 0
+  sfreq: 250
+  start: 0.5
+  stop: 0.0
+  z_scale: true
+seed: 2
+subject_ids: all
+z_scale: true

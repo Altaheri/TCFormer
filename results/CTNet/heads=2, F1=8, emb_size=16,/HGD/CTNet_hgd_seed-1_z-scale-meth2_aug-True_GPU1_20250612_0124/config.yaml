@@ -1,0 +1,37 @@
+dataset_name: hgd
+gpu_id: 1
+max_epochs: 1000
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: CTNet
+model_kwargs:
+  beta_1: 0.5
+  depth: 6
+  eeg1_D: 2
+  eeg1_dropout_rate: 0.5
+  eeg1_f1: 8
+  eeg1_kernel_size: 64
+  eeg1_pooling_size1: 8
+  eeg1_pooling_size2: 8
+  emb_size: 16
+  flatten_eeg1: 240
+  heads: 2
+  lr: 0.001
+  optimizer: adam
+  scheduler: true
+  warmup_epochs: 20
+  warmup_epochs_loso: 3
+  weight_decay: 0.001
+preprocessing:
+  batch_size: 72
+  high_cut: null
+  interaug: true
+  low_cut: 4
+  remove_artifacts: true
+  sfreq: 250
+  start: 0.0
+  stop: 0.0
+  z_scale: true
+seed: 1
+subject_ids: all
+z_scale: true

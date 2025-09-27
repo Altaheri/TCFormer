@@ -1,0 +1,27 @@
+Results for model: CTNet
+#Params: 153564
+Dataset: hgd
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 19.46m, Test Time: 154.20s, Test Acc: 0.8813, Test Loss: 0.4233, Test Kappa: 0.8417
+Subject 2 => Train Time: 52.54m, Test Time: 32.95s, Test Acc: 0.9125, Test Loss: 0.2208, Test Kappa: 0.8833
+Subject 3 => Train Time: 51.64m, Test Time: 335.29s, Test Acc: 0.9875, Test Loss: 0.0330, Test Kappa: 0.9833
+Subject 4 => Train Time: 54.85m, Test Time: 346.21s, Test Acc: 0.9937, Test Loss: 0.0205, Test Kappa: 0.9917
+Subject 5 => Train Time: 48.99m, Test Time: 93.26s, Test Acc: 1.0000, Test Loss: 0.0008, Test Kappa: 1.0000
+Subject 6 => Train Time: 35.47m, Test Time: 23.81s, Test Acc: 0.9563, Test Loss: 0.1634, Test Kappa: 0.9417
+Subject 7 => Train Time: 33.59m, Test Time: 25.12s, Test Acc: 0.8616, Test Loss: 0.4068, Test Kappa: 0.8155
+Subject 8 => Train Time: 26.14m, Test Time: 20.37s, Test Acc: 0.9750, Test Loss: 0.0877, Test Kappa: 0.9667
+Subject 9 => Train Time: 35.12m, Test Time: 25.46s, Test Acc: 0.9875, Test Loss: 0.0363, Test Kappa: 0.9833
+Subject 10 => Train Time: 38.16m, Test Time: 22.62s, Test Acc: 0.9438, Test Loss: 0.3467, Test Kappa: 0.9250
+Subject 11 => Train Time: 48.71m, Test Time: 23.76s, Test Acc: 0.9750, Test Loss: 0.0692, Test Kappa: 0.9667
+Subject 12 => Train Time: 48.33m, Test Time: 23.11s, Test Acc: 0.9875, Test Loss: 0.0189, Test Kappa: 0.9833
+Subject 13 => Train Time: 44.79m, Test Time: 22.07s, Test Acc: 0.9623, Test Loss: 0.1180, Test Kappa: 0.9497
+Subject 14 => Train Time: 46.05m, Test Time: 23.46s, Test Acc: 0.8000, Test Loss: 1.1320, Test Kappa: 0.7333
+
+--- Summary Statistics ---
+Average Test Accuracy: 94.46 ± 5.74
+Average Test Kappa:    0.926 ± 0.077
+Average Test Loss:     0.220 ± 0.290
+Total Training Time: 583.85 min
+Avg Response Time per sample: 523.21 ms

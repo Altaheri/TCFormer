@@ -1,0 +1,27 @@
+Results for model: EEGConformer
+#Params: 824772
+Dataset: hgd
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 12.07m, Test Time: 11.35s, Test Acc: 0.9500, Test Loss: 0.5545, Test Kappa: 0.9333
+Subject 2 => Train Time: 27.38m, Test Time: 23.51s, Test Acc: 0.9125, Test Loss: 0.7672, Test Kappa: 0.8833
+Subject 3 => Train Time: 30.84m, Test Time: 112.85s, Test Acc: 0.9875, Test Loss: 0.1127, Test Kappa: 0.9833
+Subject 4 => Train Time: 31.43m, Test Time: 23.33s, Test Acc: 0.9937, Test Loss: 0.1041, Test Kappa: 0.9917
+Subject 5 => Train Time: 22.59m, Test Time: 22.41s, Test Acc: 0.9937, Test Loss: 0.0094, Test Kappa: 0.9917
+Subject 6 => Train Time: 30.39m, Test Time: 152.80s, Test Acc: 0.9625, Test Loss: 0.1984, Test Kappa: 0.9500
+Subject 7 => Train Time: 29.08m, Test Time: 24.10s, Test Acc: 0.9811, Test Loss: 0.3035, Test Kappa: 0.9748
+Subject 8 => Train Time: 23.68m, Test Time: 20.01s, Test Acc: 0.9500, Test Loss: 0.3130, Test Kappa: 0.9333
+Subject 9 => Train Time: 27.68m, Test Time: 25.97s, Test Acc: 0.9937, Test Loss: 0.1079, Test Kappa: 0.9917
+Subject 10 => Train Time: 28.31m, Test Time: 23.17s, Test Acc: 0.9250, Test Loss: 0.7279, Test Kappa: 0.9000
+Subject 11 => Train Time: 31.04m, Test Time: 25.58s, Test Acc: 0.9750, Test Loss: 0.2163, Test Kappa: 0.9667
+Subject 12 => Train Time: 30.48m, Test Time: 39.19s, Test Acc: 0.9688, Test Loss: 0.3259, Test Kappa: 0.9583
+Subject 13 => Train Time: 24.67m, Test Time: 23.18s, Test Acc: 0.9686, Test Loss: 0.1812, Test Kappa: 0.9581
+Subject 14 => Train Time: 30.58m, Test Time: 168.92s, Test Acc: 0.6625, Test Loss: 4.2247, Test Kappa: 0.5500
+
+--- Summary Statistics ---
+Average Test Accuracy: 94.46 ± 8.19
+Average Test Kappa:    0.926 ± 0.109
+Average Test Loss:     0.582 ± 1.035
+Total Training Time: 380.24 min
+Avg Response Time per sample: 311.01 ms

@@ -1,0 +1,22 @@
+Results for model: TSSEFFNet
+#Params: 334824
+Dataset: bcic2a
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 1.49m, Test Time: 5.12s, Test Acc: 0.7917, Test Loss: 0.5509, Test Kappa: 0.7222
+Subject 2 => Train Time: 1.52m, Test Time: 3.40s, Test Acc: 0.5556, Test Loss: 0.9907, Test Kappa: 0.4074
+Subject 3 => Train Time: 1.54m, Test Time: 3.37s, Test Acc: 0.8438, Test Loss: 0.4301, Test Kappa: 0.7917
+Subject 4 => Train Time: 1.47m, Test Time: 6.70s, Test Acc: 0.7917, Test Loss: 0.5838, Test Kappa: 0.7222
+Subject 5 => Train Time: 1.51m, Test Time: 11.71s, Test Acc: 0.7361, Test Loss: 0.6812, Test Kappa: 0.6481
+Subject 6 => Train Time: 1.48m, Test Time: 31.68s, Test Acc: 0.6840, Test Loss: 0.8477, Test Kappa: 0.5787
+Subject 7 => Train Time: 2.17m, Test Time: 8.33s, Test Acc: 0.9271, Test Loss: 0.2539, Test Kappa: 0.9028
+Subject 8 => Train Time: 1.49m, Test Time: 13.87s, Test Acc: 0.7812, Test Loss: 0.6036, Test Kappa: 0.7083
+Subject 9 => Train Time: 1.77m, Test Time: 3.68s, Test Acc: 0.8507, Test Loss: 0.4258, Test Kappa: 0.8009
+
+--- Summary Statistics ---
+Average Test Accuracy: 77.35 ± 10.12
+Average Test Kappa:    0.698 ± 0.135
+Average Test Loss:     0.596 ± 0.211
+Total Training Time: 14.44 min
+Avg Response Time per sample: 33.90 ms

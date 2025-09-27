@@ -1,0 +1,46 @@
+dataset_name: bcic2b
+gpu_id: 1
+max_epochs: 500
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: TCFormer
+model_kwargs:
+  D: 1
+  F1: 32
+  beta_1: 0.5
+  d_group: 16
+  dropout_conv: 0.4
+  dropout_tcn: 0.3
+  kernel_length_tcn: 4
+  kv_heads: 2
+  lr: 0.0009
+  optimizer: adam
+  pool_length_1: 8
+  pool_length_2: 7
+  q_heads: 4
+  scheduler: true
+  tcn_depth: 2
+  temp_kernel_lengths:
+  - 20
+  - 32
+  - 64
+  trans_depth: 3
+  trans_dropout: 0.4
+  use_group_attn: true
+  warmup_epochs: 20
+  warmup_epochs_loso: 3
+  weight_decay: 0.001
+plot_cm_average: true
+plot_cm_per_subject: true
+preprocessing:
+  batch_size: 48
+  high_cut: null
+  interaug: true
+  low_cut: null
+  sfreq: 250
+  start: 0.0
+  stop: -0.5
+  z_scale: true
+seed: 2
+subject_ids: all
+z_scale: true

@@ -1,0 +1,36 @@
+dataset_name: bcic2a
+gpu_id: 0
+max_epochs: 1000
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: EEGTCNet
+model_kwargs:
+  D: 2
+  F1: 8
+  activation: elu
+  dropout: 0.3
+  dropout_eeg: 0.2
+  filt: 12
+  kernLength: 32
+  kernel_s: 4
+  layers: 2
+  lr: 0.001
+  optimizer: adam
+  scheduler: true
+  warmup_epochs: 20
+  warmup_epochs_loso: 3
+  weight_decay: 0.0
+plot_cm_average: true
+plot_cm_per_subject: true
+preprocessing:
+  batch_size: 64
+  high_cut: null
+  interaug: true
+  low_cut: null
+  sfreq: 250
+  start: 0.0
+  stop: 0.0
+  z_scale: true
+seed: 0
+subject_ids: all
+z_scale: true

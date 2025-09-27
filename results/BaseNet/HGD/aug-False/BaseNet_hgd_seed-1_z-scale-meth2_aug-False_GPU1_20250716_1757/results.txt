@@ -1,0 +1,27 @@
+Results for model: BaseNet
+#Params: 4572
+Dataset: hgd
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 2.85m, Test Time: 11.09s, Test Acc: 0.9438, Test Loss: 0.2234, Test Kappa: 0.9250
+Subject 2 => Train Time: 6.60m, Test Time: 21.15s, Test Acc: 0.9062, Test Loss: 0.4928, Test Kappa: 0.8750
+Subject 3 => Train Time: 7.01m, Test Time: 21.92s, Test Acc: 0.9688, Test Loss: 0.0866, Test Kappa: 0.9583
+Subject 4 => Train Time: 7.10m, Test Time: 23.19s, Test Acc: 0.9937, Test Loss: 0.0118, Test Kappa: 0.9917
+Subject 5 => Train Time: 5.88m, Test Time: 19.40s, Test Acc: 1.0000, Test Loss: 0.0001, Test Kappa: 1.0000
+Subject 6 => Train Time: 6.97m, Test Time: 22.04s, Test Acc: 0.9375, Test Loss: 0.1865, Test Kappa: 0.9167
+Subject 7 => Train Time: 6.73m, Test Time: 21.71s, Test Acc: 0.8742, Test Loss: 0.3069, Test Kappa: 0.8322
+Subject 8 => Train Time: 5.40m, Test Time: 18.37s, Test Acc: 0.9875, Test Loss: 0.0308, Test Kappa: 0.9833
+Subject 9 => Train Time: 6.99m, Test Time: 21.04s, Test Acc: 0.9875, Test Loss: 0.0333, Test Kappa: 0.9833
+Subject 10 => Train Time: 6.55m, Test Time: 21.28s, Test Acc: 0.9125, Test Loss: 0.5982, Test Kappa: 0.8833
+Subject 11 => Train Time: 6.98m, Test Time: 20.27s, Test Acc: 0.9812, Test Loss: 0.0396, Test Kappa: 0.9750
+Subject 12 => Train Time: 6.95m, Test Time: 20.33s, Test Acc: 0.9688, Test Loss: 0.1678, Test Kappa: 0.9583
+Subject 13 => Train Time: 6.43m, Test Time: 19.62s, Test Acc: 0.9497, Test Loss: 0.1408, Test Kappa: 0.9329
+Subject 14 => Train Time: 6.98m, Test Time: 20.64s, Test Acc: 0.7937, Test Loss: 3.8909, Test Kappa: 0.7250
+
+--- Summary Statistics ---
+Average Test Accuracy: 94.32 ± 5.47
+Average Test Kappa:    0.924 ± 0.073
+Average Test Loss:     0.444 ± 0.972
+Total Training Time: 89.42 min
+Average Response Time: 1.57 ms

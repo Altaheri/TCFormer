@@ -1,0 +1,22 @@
+Results for model: EEGNet
+#Params: 1154
+Dataset: bcic2b
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 0.47m, Test Time: 3.45s, Test Acc: 0.7156, Test Loss: 0.7286, Test Kappa: 0.4312
+Subject 2 => Train Time: 0.45m, Test Time: 4.89s, Test Acc: 0.6107, Test Loss: 0.8193, Test Kappa: 0.2214
+Subject 3 => Train Time: 0.49m, Test Time: 3.12s, Test Acc: 0.8344, Test Loss: 0.3633, Test Kappa: 0.6687
+Subject 4 => Train Time: 0.52m, Test Time: 4.42s, Test Acc: 0.9469, Test Loss: 0.1386, Test Kappa: 0.8938
+Subject 5 => Train Time: 0.46m, Test Time: 4.23s, Test Acc: 0.8969, Test Loss: 0.2409, Test Kappa: 0.7937
+Subject 6 => Train Time: 0.46m, Test Time: 4.01s, Test Acc: 0.8438, Test Loss: 0.3374, Test Kappa: 0.6875
+Subject 7 => Train Time: 0.48m, Test Time: 3.41s, Test Acc: 0.9187, Test Loss: 0.2644, Test Kappa: 0.8375
+Subject 8 => Train Time: 0.48m, Test Time: 4.37s, Test Acc: 0.8875, Test Loss: 0.2233, Test Kappa: 0.7750
+Subject 9 => Train Time: 0.52m, Test Time: 3.48s, Test Acc: 0.8375, Test Loss: 0.3439, Test Kappa: 0.6750
+
+--- Summary Statistics ---
+Average Test Accuracy: 83.24 ± 10.04
+Average Test Kappa:    0.665 ± 0.201
+Average Test Loss:     0.384 ± 0.219
+Total Training Time: 4.32 min
+Avg Response Time per sample: 12.53 ms

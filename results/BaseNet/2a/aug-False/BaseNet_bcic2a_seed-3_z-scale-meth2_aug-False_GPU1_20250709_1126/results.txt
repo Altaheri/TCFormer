@@ -1,0 +1,22 @@
+Results for model: BaseNet
+#Params: 3692
+Dataset: bcic2a
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 1.39m, Test Time: 3.42s, Test Acc: 0.8160, Test Loss: 0.6974, Test Kappa: 0.7546
+Subject 2 => Train Time: 1.40m, Test Time: 3.24s, Test Acc: 0.5347, Test Loss: 2.8019, Test Kappa: 0.3796
+Subject 3 => Train Time: 1.38m, Test Time: 3.43s, Test Acc: 0.8715, Test Loss: 0.5050, Test Kappa: 0.8287
+Subject 4 => Train Time: 1.37m, Test Time: 4.56s, Test Acc: 0.7083, Test Loss: 1.1344, Test Kappa: 0.6111
+Subject 5 => Train Time: 1.42m, Test Time: 5.63s, Test Acc: 0.7778, Test Loss: 0.9716, Test Kappa: 0.7037
+Subject 6 => Train Time: 1.40m, Test Time: 3.35s, Test Acc: 0.6111, Test Loss: 2.0571, Test Kappa: 0.4815
+Subject 7 => Train Time: 1.52m, Test Time: 3.70s, Test Acc: 0.8785, Test Loss: 0.5193, Test Kappa: 0.8380
+Subject 8 => Train Time: 2.55m, Test Time: 3.64s, Test Acc: 0.8333, Test Loss: 0.7278, Test Kappa: 0.7778
+Subject 9 => Train Time: 2.61m, Test Time: 3.59s, Test Acc: 0.8021, Test Loss: 1.1484, Test Kappa: 0.7361
+
+--- Summary Statistics ---
+Average Test Accuracy: 75.93 ± 11.19
+Average Test Kappa:    0.679 ± 0.149
+Average Test Loss:     1.174 ± 0.728
+Total Training Time: 15.04 min
+Avg Response Time per sample: 13.34 ms

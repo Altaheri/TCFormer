@@ -1,0 +1,27 @@
+Results for model: TSSEFFNet
+#Params: 348574
+Dataset: hgd
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 3.11m, Test Time: 10.50s, Test Acc: 0.9438, Test Loss: 0.1655, Test Kappa: 0.9250
+Subject 2 => Train Time: 7.06m, Test Time: 20.04s, Test Acc: 0.8000, Test Loss: 0.5029, Test Kappa: 0.7333
+Subject 3 => Train Time: 7.58m, Test Time: 20.38s, Test Acc: 0.9750, Test Loss: 0.0774, Test Kappa: 0.9667
+Subject 4 => Train Time: 7.69m, Test Time: 20.69s, Test Acc: 0.9875, Test Loss: 0.0270, Test Kappa: 0.9833
+Subject 5 => Train Time: 6.37m, Test Time: 18.33s, Test Acc: 0.9937, Test Loss: 0.0567, Test Kappa: 0.9917
+Subject 6 => Train Time: 7.48m, Test Time: 20.20s, Test Acc: 0.9500, Test Loss: 0.1526, Test Kappa: 0.9333
+Subject 7 => Train Time: 7.28m, Test Time: 20.42s, Test Acc: 0.9308, Test Loss: 0.2433, Test Kappa: 0.9078
+Subject 8 => Train Time: 5.84m, Test Time: 17.69s, Test Acc: 0.9312, Test Loss: 0.1723, Test Kappa: 0.9083
+Subject 9 => Train Time: 7.58m, Test Time: 20.37s, Test Acc: 0.8938, Test Loss: 0.2884, Test Kappa: 0.8583
+Subject 10 => Train Time: 7.11m, Test Time: 20.29s, Test Acc: 0.9000, Test Loss: 0.3386, Test Kappa: 0.8667
+Subject 11 => Train Time: 7.59m, Test Time: 20.82s, Test Acc: 0.9187, Test Loss: 0.2719, Test Kappa: 0.8917
+Subject 12 => Train Time: 7.55m, Test Time: 21.64s, Test Acc: 0.9625, Test Loss: 0.0977, Test Kappa: 0.9500
+Subject 13 => Train Time: 7.04m, Test Time: 22.04s, Test Acc: 0.9623, Test Loss: 0.1201, Test Kappa: 0.9497
+Subject 14 => Train Time: 7.64m, Test Time: 21.59s, Test Acc: 0.7937, Test Loss: 0.5092, Test Kappa: 0.7250
+
+--- Summary Statistics ---
+Average Test Accuracy: 92.45 ± 5.94
+Average Test Kappa:    0.899 ± 0.079
+Average Test Loss:     0.216 ± 0.147
+Total Training Time: 96.93 min
+Average Response Time: 3.35 ms

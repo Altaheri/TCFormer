@@ -1,0 +1,27 @@
+Results for model: TCFormer
+#Params: 82044
+Dataset: hgd_loso
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 126.75m, Test Time: 457.33s, Test Acc: 0.9312, Test Loss: 0.2046, Test Kappa: 0.9083
+Subject 2 => Train Time: 122.60m, Test Time: 533.93s, Test Acc: 0.7437, Test Loss: 0.6186, Test Kappa: 0.6583
+Subject 3 => Train Time: 122.33m, Test Time: 452.02s, Test Acc: 0.6187, Test Loss: 1.1847, Test Kappa: 0.4917
+Subject 4 => Train Time: 119.83m, Test Time: 397.92s, Test Acc: 0.9500, Test Loss: 0.1834, Test Kappa: 0.9333
+Subject 5 => Train Time: 122.73m, Test Time: 362.60s, Test Acc: 0.8188, Test Loss: 0.4189, Test Kappa: 0.7583
+Subject 6 => Train Time: 120.99m, Test Time: 342.73s, Test Acc: 0.6313, Test Loss: 1.1852, Test Kappa: 0.5083
+Subject 7 => Train Time: 121.67m, Test Time: 382.23s, Test Acc: 0.8239, Test Loss: 0.5353, Test Kappa: 0.7654
+Subject 8 => Train Time: 123.32m, Test Time: 315.08s, Test Acc: 0.5688, Test Loss: 1.1039, Test Kappa: 0.4250
+Subject 9 => Train Time: 121.57m, Test Time: 400.44s, Test Acc: 0.6500, Test Loss: 0.8714, Test Kappa: 0.5333
+Subject 10 => Train Time: 121.69m, Test Time: 360.43s, Test Acc: 0.6500, Test Loss: 0.9561, Test Kappa: 0.5333
+Subject 11 => Train Time: 120.99m, Test Time: 338.47s, Test Acc: 0.3625, Test Loss: 2.0696, Test Kappa: 0.1500
+Subject 12 => Train Time: 121.31m, Test Time: 420.51s, Test Acc: 0.7375, Test Loss: 0.8120, Test Kappa: 0.6500
+Subject 13 => Train Time: 122.21m, Test Time: 422.00s, Test Acc: 0.4088, Test Loss: 2.1064, Test Kappa: 0.2145
+Subject 14 => Train Time: 121.84m, Test Time: 393.55s, Test Acc: 0.5437, Test Loss: 1.5452, Test Kappa: 0.3917
+
+--- Summary Statistics ---
+Average Test Accuracy: 67.42 ± 16.82
+Average Test Kappa:    0.566 ± 0.224
+Average Test Loss:     0.985 ± 0.585
+Total Training Time: 1709.82 min
+Average Response Time: 8.39 ms

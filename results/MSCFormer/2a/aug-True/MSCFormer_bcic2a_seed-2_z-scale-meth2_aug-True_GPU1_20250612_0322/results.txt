@@ -1,0 +1,22 @@
+Results for model: MSCFormer
+#Params: 150724
+Dataset: bcic2a
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 13.30m, Test Time: 3.47s, Test Acc: 0.8681, Test Loss: 0.4044, Test Kappa: 0.8241
+Subject 2 => Train Time: 12.63m, Test Time: 3.53s, Test Acc: 0.6285, Test Loss: 1.5309, Test Kappa: 0.5046
+Subject 3 => Train Time: 12.44m, Test Time: 3.48s, Test Acc: 0.9514, Test Loss: 0.1897, Test Kappa: 0.9352
+Subject 4 => Train Time: 13.38m, Test Time: 3.36s, Test Acc: 0.8438, Test Loss: 0.5494, Test Kappa: 0.7917
+Subject 5 => Train Time: 13.04m, Test Time: 3.28s, Test Acc: 0.6562, Test Loss: 1.6536, Test Kappa: 0.5417
+Subject 6 => Train Time: 12.00m, Test Time: 3.31s, Test Acc: 0.7083, Test Loss: 1.1157, Test Kappa: 0.6111
+Subject 7 => Train Time: 13.07m, Test Time: 4.00s, Test Acc: 0.9028, Test Loss: 0.4264, Test Kappa: 0.8704
+Subject 8 => Train Time: 13.27m, Test Time: 3.85s, Test Acc: 0.8576, Test Loss: 0.6645, Test Kappa: 0.8102
+Subject 9 => Train Time: 12.20m, Test Time: 3.60s, Test Acc: 0.8542, Test Loss: 0.6909, Test Kappa: 0.8056
+
+--- Summary Statistics ---
+Average Test Accuracy: 80.79 ± 10.76
+Average Test Kappa:    0.744 ± 0.143
+Average Test Loss:     0.803 ± 0.486
+Total Training Time: 115.33 min
+Avg Response Time per sample: 12.30 ms

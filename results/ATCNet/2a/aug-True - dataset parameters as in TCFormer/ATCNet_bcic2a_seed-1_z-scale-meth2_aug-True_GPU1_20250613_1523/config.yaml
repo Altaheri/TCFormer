@@ -1,0 +1,39 @@
+dataset_name: bcic2a
+gpu_id: 1
+max_epochs: 1000
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: ATCNet
+model_kwargs:
+  D: 2
+  F1: 16
+  beta_1: 0.5
+  d_model: 32
+  dropout_attn: 0.5
+  dropout_conv: 0.3
+  dropout_tcn: 0.3
+  kernel_length_conv: 64
+  kernel_length_tcn: 4
+  key_dim: 8
+  lr: 0.0009
+  n_head: 2
+  n_windows: 5
+  optimizer: adam
+  pool_length: 8
+  scheduler: true
+  tcn_depth: 2
+  warmup_epochs: 20
+  warmup_epochs_loso: 3
+  weight_decay: 0.001
+preprocessing:
+  batch_size: 48
+  high_cut: null
+  interaug: true
+  low_cut: null
+  sfreq: 250
+  start: 0.0
+  stop: 0.0
+  z_scale: true
+seed: 1
+subject_ids: all
+z_scale: true

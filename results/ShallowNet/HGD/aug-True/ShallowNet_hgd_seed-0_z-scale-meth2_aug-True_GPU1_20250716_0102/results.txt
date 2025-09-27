@@ -1,0 +1,27 @@
+Results for model: ShallowNet
+#Params: 79844
+Dataset: hgd
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 15.09m, Test Time: 15.56s, Test Acc: 0.8250, Test Loss: 0.7266, Test Kappa: 0.7667
+Subject 2 => Train Time: 54.67m, Test Time: 267.31s, Test Acc: 0.8375, Test Loss: 0.5742, Test Kappa: 0.7833
+Subject 3 => Train Time: 36.74m, Test Time: 89.48s, Test Acc: 0.9625, Test Loss: 0.1304, Test Kappa: 0.9500
+Subject 4 => Train Time: 20.70m, Test Time: 22.07s, Test Acc: 0.9937, Test Loss: 0.0497, Test Kappa: 0.9917
+Subject 5 => Train Time: 16.44m, Test Time: 19.50s, Test Acc: 0.9937, Test Loss: 0.0070, Test Kappa: 0.9917
+Subject 6 => Train Time: 20.07m, Test Time: 21.16s, Test Acc: 0.9375, Test Loss: 0.2065, Test Kappa: 0.9167
+Subject 7 => Train Time: 19.17m, Test Time: 21.25s, Test Acc: 0.7547, Test Loss: 0.8472, Test Kappa: 0.6731
+Subject 8 => Train Time: 15.32m, Test Time: 18.51s, Test Acc: 0.9000, Test Loss: 0.2911, Test Kappa: 0.8667
+Subject 9 => Train Time: 20.25m, Test Time: 21.41s, Test Acc: 0.9563, Test Loss: 0.2051, Test Kappa: 0.9417
+Subject 10 => Train Time: 7.19m, Test Time: 20.78s, Test Acc: 0.9125, Test Loss: 0.7437, Test Kappa: 0.8833
+Subject 11 => Train Time: 7.21m, Test Time: 20.21s, Test Acc: 0.9438, Test Loss: 0.1655, Test Kappa: 0.9250
+Subject 12 => Train Time: 7.21m, Test Time: 20.09s, Test Acc: 0.9750, Test Loss: 0.0630, Test Kappa: 0.9667
+Subject 13 => Train Time: 6.63m, Test Time: 19.12s, Test Acc: 0.9308, Test Loss: 0.2474, Test Kappa: 0.9077
+Subject 14 => Train Time: 7.20m, Test Time: 20.79s, Test Acc: 0.6812, Test Loss: 5.3376, Test Kappa: 0.5750
+
+--- Summary Statistics ---
+Average Test Accuracy: 90.03 ± 8.99
+Average Test Kappa:    0.867 ± 0.120
+Average Test Loss:     0.685 ± 1.318
+Total Training Time: 253.90 min
+Average Response Time: 23.06 ms

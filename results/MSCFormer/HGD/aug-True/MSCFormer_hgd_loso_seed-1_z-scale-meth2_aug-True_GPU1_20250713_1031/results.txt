@@ -1,0 +1,27 @@
+Results for model: MSCFormer
+#Params: 151780
+Dataset: hgd_loso
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+Results for each subject:
+Subject 1 => Train Time: 20.41m, Test Time: 336.06s, Test Acc: 0.7875, Test Loss: 0.5379, Test Kappa: 0.7167
+Subject 2 => Train Time: 21.14m, Test Time: 900.85s, Test Acc: 0.6125, Test Loss: 1.0710, Test Kappa: 0.4833
+Subject 3 => Train Time: 23.50m, Test Time: 591.62s, Test Acc: 0.5312, Test Loss: 1.8298, Test Kappa: 0.3750
+Subject 4 => Train Time: 26.04m, Test Time: 584.44s, Test Acc: 0.8313, Test Loss: 0.4759, Test Kappa: 0.7750
+Subject 5 => Train Time: 25.20m, Test Time: 575.04s, Test Acc: 0.6938, Test Loss: 0.7848, Test Kappa: 0.5917
+Subject 6 => Train Time: 24.65m, Test Time: 584.51s, Test Acc: 0.5813, Test Loss: 1.4052, Test Kappa: 0.4417
+Subject 7 => Train Time: 26.90m, Test Time: 624.91s, Test Acc: 0.7421, Test Loss: 0.6325, Test Kappa: 0.6564
+Subject 8 => Train Time: 26.10m, Test Time: 582.15s, Test Acc: 0.5375, Test Loss: 1.8493, Test Kappa: 0.3833
+Subject 9 => Train Time: 23.98m, Test Time: 556.23s, Test Acc: 0.5375, Test Loss: 1.9830, Test Kappa: 0.3833
+Subject 10 => Train Time: 23.94m, Test Time: 620.09s, Test Acc: 0.6313, Test Loss: 0.9932, Test Kappa: 0.5083
+Subject 11 => Train Time: 37.02m, Test Time: 476.06s, Test Acc: 0.6750, Test Loss: 0.9384, Test Kappa: 0.5667
+Subject 12 => Train Time: 37.21m, Test Time: 505.61s, Test Acc: 0.7312, Test Loss: 0.7857, Test Kappa: 0.6417
+Subject 13 => Train Time: 39.45m, Test Time: 588.98s, Test Acc: 0.3711, Test Loss: 2.8177, Test Kappa: 0.1632
+Subject 14 => Train Time: 37.58m, Test Time: 580.42s, Test Acc: 0.6062, Test Loss: 2.1175, Test Kappa: 0.4750
+
+--- Summary Statistics ---
+Average Test Accuracy: 63.35 ± 11.69
+Average Test Kappa:    0.512 ± 0.156
+Average Test Loss:     1.302 ± 0.684
+Total Training Time: 393.12 min
+Avg Response Time per sample: 3622.59 ms

@@ -1,0 +1,22 @@
+Results for model: CTNet
+#Params: 152684
+Dataset: bcic2a_loso
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 5.89m, Test Time: 16.05s, Test Acc: 0.6944, Test Loss: 0.7587, Test Kappa: 0.5926
+Subject 2 => Train Time: 6.05m, Test Time: 16.02s, Test Acc: 0.4444, Test Loss: 1.5456, Test Kappa: 0.2593
+Subject 3 => Train Time: 6.26m, Test Time: 16.20s, Test Acc: 0.8403, Test Loss: 0.4764, Test Kappa: 0.7870
+Subject 4 => Train Time: 6.20m, Test Time: 44.04s, Test Acc: 0.4896, Test Loss: 1.1781, Test Kappa: 0.3194
+Subject 5 => Train Time: 7.02m, Test Time: 87.57s, Test Acc: 0.5764, Test Loss: 1.0480, Test Kappa: 0.4352
+Subject 6 => Train Time: 7.96m, Test Time: 19.67s, Test Acc: 0.4410, Test Loss: 1.8595, Test Kappa: 0.2546
+Subject 7 => Train Time: 8.53m, Test Time: 20.20s, Test Acc: 0.7014, Test Loss: 0.7365, Test Kappa: 0.6019
+Subject 8 => Train Time: 8.06m, Test Time: 18.85s, Test Acc: 0.7326, Test Loss: 0.6711, Test Kappa: 0.6435
+Subject 9 => Train Time: 7.95m, Test Time: 18.19s, Test Acc: 0.6076, Test Loss: 1.3787, Test Kappa: 0.4769
+
+--- Summary Statistics ---
+Average Test Accuracy: 61.42 ± 13.12
+Average Test Kappa:    0.486 ± 0.175
+Average Test Loss:     1.073 ± 0.432
+Total Training Time: 63.93 min
+Avg Response Time per sample: 99.07 ms

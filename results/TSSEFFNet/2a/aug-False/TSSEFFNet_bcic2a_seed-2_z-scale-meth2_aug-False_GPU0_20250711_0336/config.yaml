@@ -1,0 +1,34 @@
+dataset_name: bcic2a
+gpu_id: 0
+max_epochs: 1000
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: TSSEFFNet
+model_kwargs:
+  batch_norm: true
+  batch_norm_alpha: 0.1
+  conv_stride: 1
+  drop_prob: 0.5
+  lr: 0.001
+  optimizer: adam
+  pool_stride: 3
+  reduction_ratio: 8
+  scheduler: true
+  warmup_epochs: 20
+  warmup_epochs_loso: 3
+  weight_decay: 0.01
+  weight_init: standard
+plot_cm_average: true
+plot_cm_per_subject: true
+preprocessing:
+  batch_size: 64
+  high_cut: 38
+  interaug: false
+  low_cut: 0
+  sfreq: 250
+  start: -0.5
+  stop: 0.0
+  z_scale: true
+seed: 2
+subject_ids: all
+z_scale: true

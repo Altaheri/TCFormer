@@ -1,0 +1,22 @@
+Results for model: EEGTCNet
+#Params: 3766
+Dataset: bcic2b_loso
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 2.96m, Test Time: 8.78s, Test Acc: 0.7594, Test Loss: 0.4928, Test Kappa: 0.5188
+Subject 2 => Train Time: 2.91m, Test Time: 8.41s, Test Acc: 0.6071, Test Loss: 0.7984, Test Kappa: 0.2143
+Subject 3 => Train Time: 2.42m, Test Time: 53.53s, Test Acc: 0.6594, Test Loss: 0.7348, Test Kappa: 0.3188
+Subject 4 => Train Time: 2.49m, Test Time: 19.48s, Test Acc: 0.8875, Test Loss: 0.2949, Test Kappa: 0.7750
+Subject 5 => Train Time: 2.28m, Test Time: 8.44s, Test Acc: 0.9750, Test Loss: 0.1120, Test Kappa: 0.9500
+Subject 6 => Train Time: 2.65m, Test Time: 9.18s, Test Acc: 0.7156, Test Loss: 0.5237, Test Kappa: 0.4312
+Subject 7 => Train Time: 2.22m, Test Time: 8.69s, Test Acc: 0.7875, Test Loss: 0.4455, Test Kappa: 0.5750
+Subject 8 => Train Time: 2.23m, Test Time: 9.24s, Test Acc: 0.8562, Test Loss: 0.4547, Test Kappa: 0.7125
+Subject 9 => Train Time: 2.32m, Test Time: 16.86s, Test Acc: 0.8062, Test Loss: 0.3870, Test Kappa: 0.6125
+
+--- Summary Statistics ---
+Average Test Accuracy: 78.38 ± 10.80
+Average Test Kappa:    0.568 ± 0.216
+Average Test Loss:     0.472 ± 0.197
+Total Training Time: 22.49 min
+Avg Response Time per sample: 49.93 ms

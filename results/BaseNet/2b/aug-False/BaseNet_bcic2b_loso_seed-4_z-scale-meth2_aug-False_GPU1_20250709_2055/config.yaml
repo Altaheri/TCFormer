@@ -1,0 +1,46 @@
+dataset_name: bcic2b_loso
+gpu_id: 1
+max_epochs: 125
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: BaseNet
+model_kwargs:
+  attention_mode: null
+  ch_dim: 16
+  dropout: 0.5
+  dropout_inp: 0.5
+  extra_params: false
+  freq_idx: 0
+  input_window_samples: 1000
+  kernel_size: 9
+  lr: 0.001
+  n_codewords: 4
+  n_temporal_filters: 40
+  optimizer: adam
+  pool_length: 8
+  pool_length_inp: 75
+  pool_stride: 8
+  pool_stride_inp: 15
+  reduction_rate: 4
+  scheduler: true
+  spatial_expansion: 1
+  temp_filter_length: 15
+  temp_filter_length_inp: 25
+  use_mlp: false
+  warmup_epochs: 3
+  warmup_epochs_loso: 3
+  weight_decay: 0.0
+plot_cm_average: true
+plot_cm_per_subject: true
+preprocessing:
+  batch_size: 64
+  high_cut: 40
+  interaug: false
+  low_cut: 0
+  sfreq: 250
+  start: 0.0
+  stop: -0.5
+  z_scale: true
+seed: 4
+subject_ids: all
+z_scale: true
