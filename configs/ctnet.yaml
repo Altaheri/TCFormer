@@ -1,0 +1,76 @@
+# general
+dataset_name: ""   # options: "bcic2a", "bcic2b", "bcic3", "reh_mi", or "hgd".
+                   # Note: This value will be overridden if specified in train_test.py
+                   # or if passed as a command-line argument (e.g., --dataset bcic2a).
+                   
+subject_ids: "all" # options: "all", an integer (e.g., 1), or a list of integers (e.g., [1, 2, 3]).
+max_epochs: 1000
+max_epochs_2b: 1000 # for bcic2b
+max_epochs_loso: 125  
+max_epochs_loso_hgd: 77  
+seed: 0 # Random seed for reproducibility. 
+
+# preprocessing
+z_scale: True 
+interaug: True 
+preprocessing:
+  bcic2a:
+    sfreq: 250 
+    low_cut: null 
+    high_cut: null 
+    start: 0.0 
+    stop: 0.0 
+    batch_size: 72 
+  bcic2b:
+    sfreq: 250
+    low_cut: null
+    high_cut: null
+    start: 0.0
+    stop: -0.5 
+    batch_size: 72 
+  bcic3:
+    sfreq: 100
+    low_cut: 0
+    high_cut: 40
+    start: 0.0
+    stop: 0.0
+    batch_size: 28
+    channel_selection: True
+  reh_mi:
+    sfreq: 128
+    low_cut: 4
+    high_cut: 50
+    start: 0.0
+    stop: 0.0
+    batch_size: 72
+  hgd:
+    sfreq: 250
+    low_cut: 4
+    high_cut: null
+    start: 0.0 
+    stop: 0.0
+    batch_size: 72
+    remove_artifacts: True
+
+# model
+model: "CTNet"
+model_kwargs:
+  heads: 4 # 2
+  depth: 6
+  eeg1_f1: 20 # 8
+  eeg1_D: 2
+  emb_size: 40  # eeg1_f1 * eeg1_D
+  eeg1_kernel_size: 64
+  eeg1_pooling_size1: 8
+  eeg1_pooling_size2: 8
+  eeg1_dropout_rate: 0.5  # 0.25 for LOSO mode
+  flatten_eeg1: 600 # 240 # 15 * emb_size
+
+  lr: 0.001 
+  beta_1: 0.5
+  weight_decay: 0.001 # 0.001 check
+  optimizer: "adam"
+
+  scheduler: True
+  warmup_epochs: 20  
+  warmup_epochs_loso: 3

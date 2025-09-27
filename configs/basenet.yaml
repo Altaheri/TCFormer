@@ -1,0 +1,84 @@
+# general
+dataset_name: ""   # options: "bcic2a", "bcic2b", "bcic3", "reh_mi", or "hgd".
+                   # Note: This value will be overridden if specified in train_test.py
+                   # or if passed as a command-line argument (e.g., --dataset bcic2a).
+                   
+subject_ids: "all" # options: "all", an integer (e.g., 1), or a list of integers (e.g., [1, 2, 3]).
+max_epochs: 1000
+max_epochs_2b: 1000 # for bcic2b
+max_epochs_loso: 125  
+max_epochs_loso_hgd: 77  
+seed: 0 # Random seed for reproducibility. 
+
+# preprocessing
+z_scale: True 
+interaug: False 
+preprocessing:
+  bcic2a:
+    sfreq: 250 
+    low_cut: 0
+    high_cut: 40
+    start: 0.0 
+    stop: 0.0 
+    batch_size: 64
+  bcic2b:
+    sfreq: 250
+    low_cut: 0
+    high_cut: 40
+    start: 0.0
+    stop: -0.5 
+    batch_size: 64
+  bcic3:
+    sfreq: 100
+    low_cut: 0
+    high_cut: 40
+    start: 0.0
+    stop: 0.0
+    batch_size: 28
+    channel_selection: True
+  reh_mi:
+    sfreq: 128
+    low_cut: 4
+    high_cut: 50
+    start: 0.0
+    stop: 0.0
+    batch_size: 64
+  hgd:
+    sfreq: 250
+    low_cut: 4
+    high_cut: null
+    start: 0.0 
+    stop: 0.0
+    batch_size: 64
+    remove_artifacts: True
+
+# model
+model: "BaseNet"
+model_kwargs:
+  input_window_samples: 1000 # 350 for bcic3
+  n_temporal_filters: 40
+  temp_filter_length_inp: 25
+  spatial_expansion: 1
+  pool_length_inp: 75
+  pool_stride_inp: 15
+  dropout_inp: 0.5
+  ch_dim: 16
+  temp_filter_length: 15
+  pool_length: 8
+  pool_stride: 8
+  dropout: 0.5
+  # attention block
+  attention_mode: null
+  reduction_rate: 4 # 1 for bcic2b and bcic3, 8 for hgd
+  use_mlp: False
+  freq_idx: 0
+  n_codewords: 4 # 2 for bcic2b and bcic3
+  kernel_size: 9 # 11 for bcic2b, 7 for bcic3, 15 for hgd
+  extra_params: False
+  
+  lr: 0.001
+  weight_decay: 0.0
+  optimizer: "adam"
+  scheduler: True
+  warmup_epochs: 20  
+  warmup_epochs_loso: 3

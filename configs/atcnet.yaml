@@ -1,0 +1,79 @@
+# general
+dataset_name: ""   # options: "bcic2a", "bcic2b", "bcic3", "reh_mi", or "hgd".
+                   # Note: This value will be overridden if specified in train_test.py
+                   # or if passed as a command-line argument (e.g., --dataset bcic2a).
+                   
+subject_ids: "all" # options: "all", an integer (e.g., 1), or a list of integers (e.g., [1, 2, 3]).
+max_epochs: 1000
+max_epochs_2b: 1000 # for bcic2b
+max_epochs_loso: 125  
+max_epochs_loso_hgd: 77  
+seed: 0 # Random seed for reproducibility. 
+
+# preprocessing
+z_scale: True 
+interaug: True 
+preprocessing:
+  bcic2a:
+    sfreq: 250 
+    low_cut: null 
+    high_cut: null 
+    start: -0.5  
+    stop: 0.0 
+    batch_size: 48 #  64 
+  bcic2b:
+    sfreq: 250
+    low_cut: null
+    high_cut: null
+    start: 0.0
+    stop:  0.0
+    batch_size: 48 # 64
+  bcic3:
+    sfreq: 100
+    low_cut: 0
+    high_cut: 40
+    start: 0.0
+    stop: 0.0
+    batch_size: 28
+    channel_selection: True
+  reh_mi:
+    sfreq: 128
+    low_cut: 4
+    high_cut: 50
+    start: -0.5 
+    stop: 0.0
+    batch_size: 48 # 64
+  hgd:
+    sfreq: 250
+    low_cut: 4
+    high_cut: null
+    start: -0.5 
+    stop: 0.0
+    batch_size: 48 # 64
+    remove_artifacts: True
+
+# model
+model: "ATCNet"
+model_kwargs:
+  F1: 16
+  kernel_length_conv: 64
+  pool_length: 8  # 4 for reh_mi and bcic3
+  #pool_length_2: 7  
+  D: 2
+  dropout_conv: 0.3
+  d_model: 32
+  key_dim: 8
+  n_head: 2
+  dropout_attn: 0.5
+  tcn_depth: 2
+  kernel_length_tcn: 4
+  dropout_tcn: 0.3
+  n_windows: 5
+  
+  lr: 0.0009 
+  beta_1: 0.5
+  weight_decay: 0.001 
+  optimizer: "adam"
+  scheduler: True
+  warmup_epochs: 20  
+  warmup_epochs_loso: 3

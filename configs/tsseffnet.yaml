@@ -1,0 +1,71 @@
+# general
+dataset_name: ""   # options: "bcic2a", "bcic2b", "bcic3", "reh_mi", or "hgd".
+                   # Note: This value will be overridden if specified in train_test.py
+                   # or if passed as a command-line argument (e.g., --dataset bcic2a).
+                   
+subject_ids: "all" # options: "all", an integer (e.g., 1), or a list of integers (e.g., [1, 2, 3]).
+max_epochs: 1000
+max_epochs_2b: 1000 # for bcic2b
+max_epochs_loso: 125  
+max_epochs_loso_hgd: 77  
+seed: 0 # Random seed for reproducibility. 
+
+# preprocessing
+z_scale: True 
+interaug: True 
+preprocessing:
+  bcic2a:
+    sfreq: 250 
+    low_cut: 0 
+    high_cut: 38 
+    start: -0.5 
+    stop: 0.0 
+    batch_size: 64
+  bcic2b:
+    sfreq: 250
+    low_cut: 0
+    high_cut: 38
+    start: 0.0
+    stop: 0.0
+    batch_size: 64
+  bcic3:
+    sfreq: 100
+    low_cut: 0
+    high_cut: 40
+    start: 0.0
+    stop: 0.0
+    batch_size: 28
+    channel_selection: True
+  reh_mi:
+    sfreq: 128
+    low_cut: 4
+    high_cut: 50
+    start: -0.5
+    stop: 0.0
+    batch_size: 64
+  hgd:
+    sfreq: 250
+    low_cut: 4
+    high_cut: null
+    start: -0.5
+    stop: 0.0
+    batch_size: 64
+    remove_artifacts: True
+
+
+# model
+model: "TSSEFFNet"
+model_kwargs:
+  reduction_ratio: 8
+  conv_stride: 1
+  pool_stride: 3
+  batch_norm: True
+  batch_norm_alpha: 0.1
+  drop_prob: 0.5
+  weight_init: "standard"
+  lr: 0.001
+  weight_decay: 0.01
+  optimizer: "adam"
+  scheduler: True
+  warmup_epochs: 20  
+  warmup_epochs_loso: 3

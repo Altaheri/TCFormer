@@ -1,0 +1,75 @@
+# general
+dataset_name: ""   # options: "bcic2a", "bcic2b", "bcic3", "reh_mi", or "hgd".
+                   # Note: This value will be overridden if specified in train_test.py
+                   # or if passed as a command-line argument (e.g., --dataset bcic2a).
+                   
+subject_ids: "all" # options: "all", an integer (e.g., 1), or a list of integers (e.g., [1, 2, 3]).
+max_epochs: 500
+max_epochs_2b: 500 # for bcic2b
+max_epochs_loso: 125  
+max_epochs_loso_hgd: 77  
+seed: 0 # Random seed for reproducibility. 
+
+# preprocessing
+z_scale: True 
+interaug: False 
+preprocessing:
+  bcic2a:
+    sfreq: 128 
+    low_cut: 0
+    high_cut: 40
+    start: 0.5
+    stop: -1.5  # 4 second trial -> [0.5, 2.5]
+    batch_size: 64
+  bcic2b:
+    sfreq: 128
+    low_cut: 0
+    high_cut: 40
+    start: 0.5
+    stop: -2.0  # 4.5 second trial -> [0.5, 2.5]
+    batch_size: 64
+  bcic3:
+    sfreq: 100
+    low_cut: 0
+    high_cut: 40
+    start: 0.5
+    stop: -1.0  # 3.5 second trial -> [0.5, 2.5]
+    batch_size: 28
+    channel_selection: True
+  reh_mi:
+    sfreq: 128
+    low_cut: 4
+    high_cut: 50
+    start: 0.5 
+    stop: -1.5  # 4 second trial -> [0.5, 2.5]
+    batch_size: 64
+  hgd:
+    sfreq: 128
+    low_cut: 4
+    high_cut: null
+    start: 0.5 
+    stop: -1.5  # 4 second trial -> [0.5, 2.5]
+    batch_size: 64
+    remove_artifacts: True
+
+# model
+model: "EEGNet"
+model_kwargs:
+  input_window_samples: 256  # 200 for bcic3
+  F1: 8
+  D: 2
+  F2: 16  # F1 * D
+  drop_prob: 0.5  # LOSO: 0.25
+  kernel_length: 32
+  pool_time_length: 4
+  pool_time_stride: 4
+  kernel_length_dw_sep: 16
+  lr: 0.001
+  weight_decay: 0.0
+  optimizer: "adam"
+  scheduler: False # True ???????
+  warmup_epochs: 20  
+  warmup_epochs_loso: 3
+
+  # simplify: False # for bcic3
+  # projector: False # for bcic3
