@@ -8,7 +8,7 @@ import torch
 from torch.utils.data.dataloader import DataLoader
 
 from .base import BaseDataModule
-from channel_attention.utils.load_hgd import load_hgd
+from utils.load_hgd import load_hgd
 
 
 class HighGamma(BaseDataModule):
