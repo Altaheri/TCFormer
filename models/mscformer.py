@@ -312,7 +312,7 @@ class TCN(nn.Module):
             x = blk(x)
         return x
 
-from channel_attention.utils.weight_initialization import glorot_weight_zero_bias
+from utils.weight_initialization import glorot_weight_zero_bias
 class _AttentionBlock(nn.Module):
     def __init__(self, d_model, key_dim=8, n_head=2, dropout=0.5):
         super(_AttentionBlock, self).__init__()
