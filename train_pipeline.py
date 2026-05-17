@@ -171,7 +171,7 @@ def parse_arguments():
     parser.add_argument("--loso", action="store_true", default=False, 
         help="Enable subject-independent (LOSO) mode"
     )
-    parser.add_argument("--gpu_id", type=int, default=1, help="GPU device ID to use")
+    parser.add_argument("--gpu_id", type=int, default=0, help="GPU device ID to use")
     
     parser.add_argument("--seed", type=int, default=None, 
                         help="Random seed value (overrides config if specified)")
