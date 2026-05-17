@@ -1,13 +1,25 @@
-# Python 3.10
-mne==1.9.0	       
-numpy==2.3.1          
-scikit-learn==1.7.0    
-moabb==0.5.0	       
-torch==2.7.1           
-braindecode==0.8.1     
-PyYAML==6.0.2          
-pytorch-lightning==2.5.2 
-einops==0.8.1	       
-torchvision==0.22.1    
-scipy==1.16.0	       
-matplotlib==3.10.3     
+# =============================================================================
+# TCFormer-Emotion — Python Requirements
+# Target Python: 3.10
+# -----------------------------------------------------------------------------
+# NOTE: PyTorch and torchvision are installed SEPARATELY from PyTorch's
+#       CUDA index — see README.md. Do not add them to this file.
+# =============================================================================
+
+# --- Core scientific stack ---
+numpy==1.26.4          # pinned <2.0 (required by moabb 0.5.0)
+scipy==1.15.3          # scipy >=1.16 requires Python >=3.11
+scikit-learn==1.7.0
+matplotlib==3.10.3
+
+# --- Deep learning (torch/torchvision installed separately, see README) ---
+pytorch-lightning==2.5.2
+einops==0.8.1
+
+# --- EEG / neuroscience ---
+mne==1.9.0
+moabb==0.5.0           # requires Python <3.11 and numpy <2.0
+braindecode==0.8.1
+
+# --- Utilities ---
+PyYAML==6.0.2
