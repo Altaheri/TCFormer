@@ -125,22 +125,25 @@ def z_scale_collate_fn(batch):
     return x_scaled, torch.stack(labels)
 
 from utils.interaug import interaug
-def make_collate_fn(preproc):
-    """Return a collate function that optionally applies interaug and/or z-scaling."""
-    def collate(batch):
-        xs, ys = zip(*batch)                  # tuples of tensors/ints
-        x = torch.stack(xs)                   # [B, C, T]
+
+
+class HGDCollate:
+    # Module-level callable so DataLoader workers can pickle it under Windows spawn.
+    def __init__(self, preproc):
+        self.preproc = preproc
+
+    def __call__(self, batch):
+        xs, ys = zip(*batch)
+        x = torch.stack(xs)
         y = torch.stack(ys)
-        # y = torch.tensor(ys, dtype=torch.long)
-
-        if preproc.get("interaug", False):
-            x, y = interaug([x, y])           # now shapes are OK
-
-        if preproc.get("z_scale", False):
-            # z-scale each channel over the batch
+        if self.preproc.get("interaug", False):
+            x, y = interaug([x, y])
+        if self.preproc.get("z_scale", False):
             mean = x.mean(dim=0, keepdim=True)
             std  = x.std(dim=0, unbiased=True, keepdim=True)
             x    = (x - mean) / std
-
         return x, y
-    return collate
+
+
+def make_collate_fn(preproc):
+    return HGDCollate(preproc)

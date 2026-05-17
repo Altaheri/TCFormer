@@ -8,17 +8,24 @@ from torch.utils.data.dataset import TensorDataset
 import os
 
 from utils.interaug import interaug
-def make_collate_fn(preproc):
-    """Return a collate function that optionally applies interaug."""
-    def collate(batch):
-        xs, ys = zip(*batch)                  # tuples of tensors/ints
-        x = torch.stack(xs)                   # [B, C, T]
-        y = torch.tensor(ys, dtype=torch.long)
 
-        if preproc.get("interaug", False):
-            x, y = interaug([x, y])           # now shapes are OK
+
+class InterAugCollate:
+    # Module-level callable so DataLoader workers can pickle it under Windows spawn.
+    def __init__(self, preproc):
+        self.preproc = preproc
+
+    def __call__(self, batch):
+        xs, ys = zip(*batch)
+        x = torch.stack(xs)
+        y = torch.tensor(ys, dtype=torch.long)
+        if self.preproc.get("interaug", False):
+            x, y = interaug([x, y])
         return x, y
-    return collate
+
+
+def make_collate_fn(preproc):
+    return InterAugCollate(preproc)
 
 
 class BaseDataModule(pl.LightningDataModule):
