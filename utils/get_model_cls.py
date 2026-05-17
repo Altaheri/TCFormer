@@ -1,7 +1,6 @@
 from models import (
     TCFormer,
     ATCNet,
-    ATCNet_2_0,
     BaseNet,
     # SST_DPN,
     EEGConformer,
@@ -19,7 +18,6 @@ model_dict = dict(
     # SST_DPN=SST_DPN,
     TCFormer=TCFormer,
     ATCNet=ATCNet,
-    ATCNet_2_0 = ATCNet_2_0,
     BaseNet=BaseNet,
     EEGConformer=EEGConformer,
     EEGNet=EEGNet,
