@@ -1,4 +1,4 @@
-# Python 3.11.13
+# Python 3.10
 mne==1.9.0	       
 numpy==2.3.1          
 scikit-learn==1.7.0    
