@@ -15,11 +15,15 @@ matplotlib==3.10.3
 # --- Deep learning (torch/torchvision installed separately, see README) ---
 pytorch-lightning==2.5.2
 einops==0.8.1
+torchviz==0.0.3
+torchsummary==1.5.1
+
 
 # --- EEG / neuroscience ---
 mne==1.9.0
 moabb==0.5.0           # requires Python <3.11 and numpy <2.0
-braindecode==0.8.1
+braindecode==0.7
+
 
 # --- Utilities ---
 PyYAML==6.0.2
