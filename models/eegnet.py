@@ -4,7 +4,7 @@ from torch import nn
 
 from .classification_module import ClassificationModule
 from .modules import Conv2dWithConstraint
-from channel_attention.utils.weight_initialization import glorot_weight_zero_bias
+from utils.weight_initialization import glorot_weight_zero_bias
 
 
 class EEGNetModule(nn.Module):
