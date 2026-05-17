@@ -3,7 +3,7 @@ from torch import nn
 
 from .modules import CausalConv1d, Conv2dWithConstraint, LinearWithConstraint
 from .classification_module import ClassificationModule
-from channel_attention.utils.weight_initialization import glorot_weight_zero_bias
+from utils.weight_initialization import glorot_weight_zero_bias
 
 nonlinearity_dict = dict(relu=nn.ReLU(), elu=nn.ELU())
 
