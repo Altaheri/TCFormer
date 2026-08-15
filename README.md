@@ -15,7 +15,7 @@
 ---
 
 ## Environment
-**Python** 3.10 • **PyTorch** 2.6.0 • **CUDA** 12.4  
+**Python** 3.10 • **PyTorch** 2.7.0 • **CUDA** 12.4  
 > Tested on Ubuntu 24.04 with RTX A6000 GPUs (48 GB). Results may vary slightly by hardware and seeds.
 
 ### 1. Create and activate the conda environment
@@ -27,13 +27,14 @@ conda activate tcformer
 
 ### 2. Install PyTorch with CUDA support
 
+To reproduce the reported results, use the reference build:
+
 ```bash
 pip install --upgrade pip
 pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu126
 ```
 
-> PyTorch 2.7.1 ships official CUDA wheels for **cu118, cu126, and cu128** (no cu124 build).
-> The bundled CUDA runtime is independent of your system CUDA Toolkit — you only need an NVIDIA driver that supports CUDA 12.6+ (driver ≥ 560). Check with `nvidia-smi`.
+> To just run the model on your own hardware, install the build that matches your GPU and driver via the official selector: https://pytorch.org/get-started/locally/
 
 ### 3. Install remaining dependencies
 
