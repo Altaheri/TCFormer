@@ -2,9 +2,20 @@
 
 > Official code for the paper **“Temporal convolutional transformer for EEG based motor imagery decoding.”**  
 > Paper: https://www.nature.com/articles/s41598-025-16219-7 (Nature Scientific Reports, 2025)
+- Built upon ideas/code from [**EEG-ATCNet**](https://github.com/Altaheri/EEG-ATCNet).  
+- Training pipeline structure and several implementations adapted from [**channel-attention**](https://github.com/martinwimpff/channel-attention).
 
-- Built upon ideas/code from **EEG-ATCNet**: https://github.com/Altaheri/EEG-ATCNet  
-- Training pipeline structure and several implementations adapted from **channel-attention**: https://github.com/martinwimpff/channel-attention
+![](https://img.shields.io/badge/-ffffff?style=flat-square&height=1)
+
+![](https://img.shields.io/badge/-e6766e?style=flat-square&height=1)
+[![Braindecode](https://img.shields.io/badge/Braindecode-TCFormer-4c7fbe)](https://braindecode.org/dev/generated/braindecode.models.TCFormer.html)
+> **Now in Braindecode** — TCFormer is available as
+> [`braindecode.models.TCFormer`](https://braindecode.org/dev/generated/braindecode.models.TCFormer.html)
+> (v1.6.1+). Many thanks to [Bruno Aristimunha](https://github.com/bruAristimunha)
+> for the integration, and to the [Braindecode](https://braindecode.org) team for
+> maintaining such high-quality, well-documented EEG tooling.
+
+
 
 ---
 
